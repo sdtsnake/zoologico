@@ -16,8 +16,13 @@ public class EjemploMamiferos{
         mamiferos[1] = new Perro("Sabana Africana",10F,15F,25F,"can de la pradera","cafe",5F,50);
         mamiferos[2] = new Guepardo("Planicies africanas",2.5F,4F,50F,"felino pecoso",3F,80);
         mamiferos[3] = new Leon("Africa",3F,5F,90F,"rey felinus",5F,60,5,60F);
-        mamiferos[4] = new Tigre("",);
+        mamiferos[4] = new Tigre("Selva",4F,6F,70F,"felinus indonimos",8F,60,"vengala");
+        mamiferos[5] = new Lobo("las montañas",1.5F,3.5F,50F,"licanproto","gris",3F,5,"bosque");
 
-
+        for(Mamifero animal : mamiferos){
+            System.out.println(animal.comer());
+            System.out.println(animal.comunicarse());
+            System.out.println(animal.dormir());
+        }
     }
 }
